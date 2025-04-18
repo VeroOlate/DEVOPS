@@ -53,8 +53,7 @@
         .then(data => {
           // Muestra la respuesta del servidor en consola
           console.log('Respuesta del servidor:', data);
-          alert('Hubo un error al enviar los datos');// Alerta si todo salió bien
-          alert('Datos enviados con éxito');
+          alert('Datos enviados con éxito');// Alerta si todo salió bien
         })
         .catch(error => {
           // Maneja cualquier error en la petición
@@ -86,14 +85,14 @@
   
         Respuesta Esperada del Backend:
         {
-          "success": true,
+          "success": ok,
           "message": "Usuario creado exitosamente"
         }
   
         Manejo de Errores:
         En caso de error, el servidor podría responder con:
         {
-          "success": false,
+          "success": error,
           "error": "Nombre de usuario ya existe"
         }
       -->
